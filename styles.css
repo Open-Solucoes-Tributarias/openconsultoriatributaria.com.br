@@ -1,0 +1,98 @@
+html {
+  background-color: #ffffff;
+  overflow: auto;
+  font-family: "Open Sans", "Arial";
+  /* background-image: url("./assets/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+}
+@media (max-width: 500px) {
+  html {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* cabeçalho */
+
+.header-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 15%; /*padding padrão */
+  padding-block: 0.5%;
+}
+@media (max-width: 500px) {
+  .header-menu {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.logo {
+  width: 180px;
+}
+
+.menu-navbar {
+  display: flex;
+  gap: 15px;
+}
+
+.menu-navbar a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
+
+/*banner inicial*/
+.banner {
+  position: relative; /* Necessário para o pseudo-elemento funcionar */
+  background-image: url("https://img.freepik.com/fotos-gratis/close-up-do-homem-de-negocios-com-tabuleta-digital_1098-549.jpg?t=st=1732826002~exp=1732829602~hmac=4ceed0f5d1f11e7c51f63adcdf6c74fb25fb57bf3197c2c560ab95f2756ca3d0&w=1380");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-inline: 15%;
+  gap: 50px;
+  z-index: 1; /* Garante que o conteúdo fique acima da camada */
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Cor preta com opacidade de 50% */
+  z-index: -1; /* Fica atrás do conteúdo principal */
+}
+
+.title-banner {
+  font-size: 45px;
+  color: #ffffff;
+}
+.subtitle-container {
+  padding-inline: 15%;
+  text-align: center;
+}
+.subtitle-banner {
+  font-size: 25px;
+  color: #ffffff;
+}
+
+.button {
+    background-color: #ffffff;
+    color: black;
+    border-radius: 10px;
+    padding: 12px;
+    border: none;
+    font-weight: 600;
+}
