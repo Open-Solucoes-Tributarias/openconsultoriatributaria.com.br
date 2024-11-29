@@ -135,16 +135,85 @@ html {
   flex-direction: column;
   justify-content: space-between;
   gap: 50px;
+  padding-right: 80px;
+  text-align: left;
 }
 .presentation-right {
-  width: 100%; /* Ocupa 100% do espaço do container pai */
-  max-width: 100%; /* Limita o tamanho máximo para evitar exagero */
-  height: auto; /* Mantém a proporção do vídeo */
+  position: relative;
+  width: 100%;
+  height: 300px;
+  max-width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.presentation-right video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 10px;
 }
-.presentation-right iframe {
-  width: 100%; /* Ocupa 100% do espaço do container pai */
-  max-width: 100%; /* Limita o tamanho máximo para evitar exagero */
-  min-height: 100%; /* Mantém a proporção do vídeo */
+
+/*section features*/
+.section-features {
+  min-height: 100%;
+  padding-inline: 15%;
+  align-items: center;
+  padding-block: 3%;
+}
+.title-secfeatures {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.title-secfeatures h2 {
+  color: #001568;
+  font-size: 25px;
+  font-weight: 600;
+}
+.title-secfeatures p {
+  color: #333;
+  font-size: 18px;
+  font-weight: 500;
+}
+.features-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  padding-block: 3%;
+}
+.card {
+  background: linear-gradient(90deg, #001568 0%, #2987f2 100%);
+  color: white;
+  padding-block: 3rem;
+  padding-inline: 0.5rem;
   border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+}
+.card:hover {
+  transform: scale(1.02); 
+}
+.card-icon img {
+  display: block;
+  margin: 0 auto;
+  width: 50px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.card-description {
+  font-size: 1.03rem;
+  text-align: left;
+  padding: 20px;
+  line-height: 1.5rem;
+  font-weight: unset;
 }
