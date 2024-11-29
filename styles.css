@@ -33,18 +33,22 @@ html {
 }
 
 .logo {
-  width: 180px;
+  width: 160px;
 }
 
 .menu-navbar {
   display: flex;
-  gap: 15px;
+  gap: 50px;
 }
 
 .menu-navbar a {
   text-decoration: none;
   color: #333;
   font-size: 16px;
+}
+.icons {
+  width: 15px;
+  cursor: pointer;
 }
 
 /*banner inicial*/
@@ -89,10 +93,58 @@ html {
 }
 
 .button {
-    background-color: #ffffff;
-    color: black;
-    border-radius: 10px;
-    padding: 12px;
-    border: none;
-    font-weight: 600;
+  background-color: #ffffff;
+  color: black;
+  border-radius: 10px;
+  padding: 12px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: black;
+  color: #ffffff;
+  transform: scale("1.1");
+}
+
+/*seção de apresentação */
+.presentation {
+  min-height: 100%;
+  padding-inline: 15%;
+  background: linear-gradient(90deg, #001568 0%, #2987f2 100%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  align-items: center;
+  padding-block: 5%;
+}
+.presentation h3 {
+  color: #ffffff;
+  font-size: 25px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+.presentation p {
+  color: #ffffff;
+  font-size: 17px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+.presentation-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 50px;
+}
+.presentation-right {
+  width: 100%; /* Ocupa 100% do espaço do container pai */
+  max-width: 100%; /* Limita o tamanho máximo para evitar exagero */
+  height: auto; /* Mantém a proporção do vídeo */
+  border-radius: 10px;
+}
+.presentation-right iframe {
+  width: 100%; /* Ocupa 100% do espaço do container pai */
+  max-width: 100%; /* Limita o tamanho máximo para evitar exagero */
+  min-height: 100%; /* Mantém a proporção do vídeo */
+  border-radius: 10px;
 }
