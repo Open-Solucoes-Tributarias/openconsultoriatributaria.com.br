@@ -193,9 +193,10 @@ html {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   max-width: 500px;
+  justify-content: space-between;
 }
 .card:hover {
-  transform: scale(1.02); 
+  transform: scale(1.02);
 }
 .card-icon img {
   display: block;
@@ -208,11 +209,80 @@ html {
   padding: 10px;
   font-weight: bold;
   text-align: center;
+  line-height: 1.5rem;
 }
 
 .card-description {
-  font-size: 1.03rem;
+  font-size: 15px;
   text-align: left;
+  padding: 20px;
+  line-height: 1.5rem;
+  font-weight: unset;
+}
+/*divider*/
+.section-divider {
+  height: 8rem;
+  background: linear-gradient(90deg, #001568 0%, #2987f2 100%);
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+.section-divider h2 {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 600;
+}
+/*section-team*/
+.section-team {
+  min-height: 100%;
+  padding-inline: 15%;
+  align-items: center;
+  padding-block: 3%;
+}
+.title-team {
+  color: #001568;
+  font-size: 26px;
+  font-weight: 600;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+.team-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-block: 3%;
+  gap: 30px;
+}
+.card-team {
+  background: linear-gradient(90deg, #001568 0%, #2987f2 100%);
+  color: white;
+  padding-block: 3rem;
+  padding-inline: 0.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 50vw;
+  justify-content: space-between;
+}
+.card-team:hover {
+  transform: scale(1.02);
+}
+.card-image-team img {
+  display: block;
+  margin: 0 auto;
+  width: 130px;
+}
+
+.card-team-title {
+  font-size: 25px;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+.card-team-description {
+  font-size: 14px;
+  text-align: center;
   padding: 20px;
   line-height: 1.5rem;
   font-weight: unset;
