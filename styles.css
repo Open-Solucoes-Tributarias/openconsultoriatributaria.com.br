@@ -13,6 +13,28 @@ html {
     flex-direction: column;
   }
 }
+/* whatsapp button  */
+
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.my-float {
+  align-items: center;
+  margin-top: 8px;
+  width: 35px;
+}
 
 /* cabeçalho */
 
@@ -309,4 +331,30 @@ html {
   margin: 0 auto;
   width: 150px;
   padding-block: 2%;
+}
+/* Seção publicações */
+.publis {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-inline: 15%;
+  align-items: center;
+}
+.image-publi {
+  width: 400px;
+}
+.publis-right {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.title-publis {
+  color: #001568;
+  font-size: 26px;
+  font-weight: 600;
+  text-align: left;
+}
+.content-right p {
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 1.5vw;
 }
