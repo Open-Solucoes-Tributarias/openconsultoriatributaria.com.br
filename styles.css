@@ -287,3 +287,26 @@ html {
   line-height: 1.5rem;
   font-weight: unset;
 }
+.team-grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-block: 3%;
+  gap: 30px;
+}
+/* section clients */
+.client-section {
+  align-items: center;
+}
+
+.group-client {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  padding-inline: 5%;
+}
+.image-client {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  padding-block: 2%;
+}
