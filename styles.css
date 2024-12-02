@@ -79,7 +79,7 @@ html {
   background-image: url("https://img.freepik.com/fotos-gratis/close-up-do-homem-de-negocios-com-tabuleta-digital_1098-549.jpg?t=st=1732826002~exp=1732829602~hmac=4ceed0f5d1f11e7c51f63adcdf6c74fb25fb57bf3197c2c560ab95f2756ca3d0&w=1380");
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 80vh;
+  min-height: 85vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -357,4 +357,90 @@ html {
   font-size: 16px;
   font-weight: 100;
   line-height: 1.5vw;
+}
+/* section contact */
+.section-contact {
+  background: linear-gradient(90deg, #001568 0%, #2987f2 100%);
+  padding-inline: 15%;
+  padding-block: 2%;
+}
+.title-contact {
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 600;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+.forms-contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+  row-gap: 30px;
+  padding-block: 2%;
+}
+.forms-contact input,
+.forms-contact textarea {
+  width: 100%;
+  border-radius: 8px;
+  padding: 14px;
+  border: none;
+  margin-bottom: 14px;
+}
+.forms-contact button {
+  width: 50%;
+  height: 25%;
+  margin-top: -5px;
+  border-radius: 8px;
+  padding: 12px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+/* rodapé */
+footer {
+  background: #001568;
+  padding-inline: 15%;
+  padding-top: 2%;
+  padding-bottom: 0.5%;
+}
+.section-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.footer-logo {
+  width: 150px;
+}
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer-left p {
+  color: #fff;
+  font-size: 13px;
+}
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  padding-left: 50%;
+}
+.footer-right h4 {
+  color: #fff;
+  font-size: 20px;
+}
+.footer-right p {
+  color: #fff;
+  font-size: 16px;
+}
+
+.copy {
+  align-items: center;
+  text-align: center;
+}
+.copy p {
+  color: #fff;
+  font-size: 14px;
 }
