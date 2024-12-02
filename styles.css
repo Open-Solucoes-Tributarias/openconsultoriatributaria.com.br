@@ -152,6 +152,10 @@ html {
   letter-spacing: 0.8px;
   font-weight: 500;
 }
+.presentation b {
+  color: #c79d63;
+  font-weight: 700;
+}
 .presentation-left {
   display: flex;
   flex-direction: column;
@@ -205,14 +209,14 @@ html {
 .features-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 30px;
+  gap: 18px;
   padding-block: 3%;
 }
 .card {
   background: linear-gradient(90deg, #001568 0%, #2987f2 100%);
   color: white;
-  padding-block: 3rem;
-  padding-inline: 0.5rem;
+  padding-block: 2rem;
+  padding-inline: 0.4rem;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   max-width: 500px;
@@ -236,7 +240,7 @@ html {
 }
 
 .card-description {
-  font-size: 15px;
+  font-size: 14px;
   text-align: left;
   padding: 20px;
   line-height: 1.5rem;
@@ -255,6 +259,10 @@ html {
   color: #ffffff;
   font-size: 30px;
   font-weight: 600;
+}
+.section-divider b {
+  color: #c79d63;
+  font-weight: 700;
 }
 /*section-team*/
 .section-team {
@@ -360,6 +368,10 @@ html {
   font-size: 16px;
   font-weight: 100;
   line-height: 1.5vw;
+  font-style: inherit;
+}
+b {
+  font-weight: bold;
 }
 /* section contact */
 .section-contact {
