@@ -81,7 +81,7 @@ html {
 /*banner inicial*/
 .banner {
   position: relative; /* Necessário para o pseudo-elemento funcionar */
-  background-image: url("https://img.freepik.com/fotos-gratis/close-up-do-homem-de-negocios-com-tabuleta-digital_1098-549.jpg?t=st=1732826002~exp=1732829602~hmac=4ceed0f5d1f11e7c51f63adcdf6c74fb25fb57bf3197c2c560ab95f2756ca3d0&w=1380");
+  background-image: url("/assets/bgcobsultoria.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 85vh;
