@@ -147,7 +147,6 @@ html {
 
 /*seção de apresentação */
 .presentation {
-  min-height: 100%;
   padding-inline: 15%;
   background: linear-gradient(90deg, #001568 0%, #2987f2 100%);
   display: grid;
