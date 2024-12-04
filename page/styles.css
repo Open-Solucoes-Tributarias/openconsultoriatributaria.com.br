@@ -81,7 +81,7 @@ html {
 /*banner inicial*/
 .banner {
   position: relative; /* Necessário para o pseudo-elemento funcionar */
-  background-image: url("/assets/obrigado.jpg");
+  background-image: url("../assets/obrigado.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 85vh;
