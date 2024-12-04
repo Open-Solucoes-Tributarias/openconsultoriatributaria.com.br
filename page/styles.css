@@ -139,7 +139,7 @@ html {
 /*seção de apresentação */
 .presentation {
   padding-inline: 15%;
-  background: linear-gradient(90deg, #001568 0%, #2987f2 100%);
+  background: linear-gradient(90deg, #031532 0%, #2987f2 100%);
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
@@ -241,7 +241,7 @@ html {
 .features-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 18px;
+  gap: 25px;
   padding-block: 3%;
 }
 @media (max-width: 768px) {
@@ -251,10 +251,10 @@ html {
   }
 }
 .card {
-  background: linear-gradient(90deg, #001568 0%, #2987f2 100%);
+  background: linear-gradient(180deg, #031532 0%, #2987f2 100%);
   color: white;
   padding-block: 2rem;
-  padding-inline: 0.8%;
+  padding-inline: 5%;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   max-width: 500px;
@@ -279,7 +279,7 @@ html {
 
 .card-description {
   font-size: 14px;
-  text-align: left;
+  text-align: center;
   padding: 20px;
   line-height: 1.5rem;
   font-weight: unset;
@@ -294,7 +294,7 @@ html {
 }
 
 .title-team {
-  color: #001568;
+  color: #031532;
   font-size: 30px;
   font-weight: 600;
   text-align: center;
@@ -372,7 +372,7 @@ b {
 }
 /* section contact */
 .section-contact {
-  background: linear-gradient(90deg, #001568 0%, #2987f2 100%);
+  background: linear-gradient(90deg, #031532 0%, #2987f2 100%);
   padding-inline: 15%;
   padding-block: 4%;
 }
@@ -429,7 +429,7 @@ b {
 }
 /* rodapé */
 footer {
-  background: #001568;
+  background: #031532;
   padding-inline: 15%;
   padding-top: 2%;
   padding-bottom: 0.7%;
