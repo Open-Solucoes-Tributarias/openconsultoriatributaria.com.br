@@ -267,6 +267,7 @@ html {
   display: block;
   margin: 0 auto;
   width: 50px;
+  padding-block: 20px;
 }
 
 .card-title {
@@ -278,12 +279,12 @@ html {
 }
 
 .card-description {
-  font-size: 14px;
+  font-size: 15px;
   text-align: center;
   padding: 20px;
   line-height: 1.5rem;
   font-weight: unset;
-  color: #d4d4d4;
+  color: #ffffff;
 }
 @media (max-width: 768px) {
   .card-description {
