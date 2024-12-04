@@ -230,7 +230,7 @@ html {
 }
 .title-secfeatures h2 {
   color: #001568;
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 600;
 }
 .title-secfeatures p {
@@ -292,32 +292,10 @@ html {
     padding-inline: 10px;
   }
 }
-/*divider*/
-.section-divider {
-  height: 8rem;
-  background: linear-gradient(90deg, #001568 0%, #2987f2 100%);
-  text-align: center;
-  align-items: center;
-  align-content: center;
-}
-.section-divider h2 {
-  color: #ffffff;
-  font-size: 30px;
-  font-weight: 600;
-}
-@media (max-width: 768px) {
-  .section-divider h2 {
-    font-size: 20px;
-    padding-inline: 5%;
-  }
-}
-.section-divider b {
-  color: #c79d63;
-  font-weight: 700;
-}
+
 .title-team {
   color: #001568;
-  font-size: 26px;
+  font-size: 30px;
   font-weight: 600;
   text-align: center;
   align-items: center;
