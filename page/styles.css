@@ -96,7 +96,9 @@ html {
 }
 @media (max-width: 768px) {
   .banner {
-    padding-inline: 0;
+    padding-inline: 3%;
+    align-items: center;
+    text-align: center;
   }
 }
 
@@ -106,6 +108,14 @@ html {
   font-weight: bold;
   color: #ffffff;
 }
+@media (max-width: 768px) {
+  .title-banner {
+    padding-inline: 3%;
+    align-items: center;
+    text-align: center;
+  }
+}
+
 .subtitle-container {
   padding-right: 45%;
   text-align: left;
@@ -113,6 +123,7 @@ html {
 @media (max-width: 768px) {
   .subtitle-container {
     padding-inline: 0;
+    text-align: center;
   }
 }
 
