@@ -80,11 +80,11 @@ html {
 
 /*banner inicial*/
 .banner {
-  position: relative; /* Necessário para o pseudo-elemento funcionar */
-  background-image: url("../assets/obrigado.jpg");
+  position: relative;
+  background-image: url("../assets/lp-medicos.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 85vh;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -104,9 +104,10 @@ html {
 
 .title-banner {
   padding-right: 50%;
-  font-size: 32px;
+  font-size: 48px;
   font-weight: bold;
   color: #ffffff;
+  line-height: normal;
 }
 @media (max-width: 768px) {
   .title-banner {
@@ -129,28 +130,74 @@ html {
 
 .subtitle-banner {
   font-size: 20px;
-  color: #ffffff;
+  color: #c1f1ff;
 }
 
 .button {
-  background-color: #ffffff;
+  background-color: #d67e23;
   color: black;
-  border-radius: 10px;
-  padding: 15px;
+  border-radius: 5px;
+  padding: 10px;
   border: none;
   font-weight: 600;
   cursor: pointer;
 }
-.button:hover {
-  background: #919191;
-  color: #ffffff;
-  transform: scale("1.1");
+
+.button-talk {
+  background-color: #d67e23;
+  color: black;
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
 }
 
+/*video de apresentação */
+.video-section {
+  padding-inline: 15%;
+  background: #031532;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  padding-block: 3%;
+}
+
+.video-section h3 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: normal;
+}
+@media (max-width: 768px) {
+  .video-section {
+    text-align: center;
+  }
+  .video-section h3 {
+    font-size: 25px;
+  }
+}
+
+.video-content {
+  width: 100%;
+}
+
+.video-section iframe {
+  display: block;
+  width: 90%;
+  height: auto;
+  aspect-ratio: 16 / 9; /* Define uma proporção padrão para vídeos */
+  margin: 0 auto;
+  object-fit: fill;
+  border-radius: 10px;
+}
 /*seção de apresentação */
 .presentation {
   padding-inline: 15%;
-  background: linear-gradient(90deg, #031532 0%, #2987f2 100%);
+  background: #fff;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
@@ -165,13 +212,13 @@ html {
   }
 }
 .presentation h3 {
-  color: #ffffff;
-  font-size: 25px;
+  color: #031532;
+  font-size: 28px;
   letter-spacing: 1px;
   font-weight: 600;
 }
 .presentation p {
-  color: #d4d4d4;
+  color: #333333;
   font-size: 16px;
   letter-spacing: 0.8px;
   font-weight: 500;
@@ -262,7 +309,7 @@ html {
   }
 }
 .card {
-  background: linear-gradient(180deg, #031532 0%, #2987f2 100%);
+  background: linear-gradient(178deg, #046191 0%, #031f4d 62%);
   color: white;
   padding-block: 2rem;
   padding-inline: 5%;
@@ -306,23 +353,38 @@ html {
 }
 
 .title-team {
-  color: #031532;
+  color: #ffffff;
   font-size: 30px;
   font-weight: 600;
   text-align: center;
   align-items: center;
   align-content: center;
 }
+@media (max-width: 768px) {
+  .title-team {
+    font-size: 20px;
+  }
+}
 /* section clients */
 .client-section {
   align-items: center;
   padding-block: 2%;
+  background: linear-gradient(178deg, #046191 0%, #031532 62%);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+@media (max-width: 768px) {
+  .client-section {
+    padding-inline: 5%;
+  }
 }
 
 .group-client {
   display: flex;
   flex-direction: row;
-  gap: 0px;
+  gap: 50px;
   padding-inline: 5%;
 }
 @media (max-width: 768px) {
@@ -336,6 +398,26 @@ html {
   margin: 0 auto;
   width: 150px;
   padding-block: 2%;
+}
+
+.atest-content {
+  width: 100%;
+  padding-inline: 25%;
+}
+
+.atest-content iframe {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9; /* Define uma proporção padrão para vídeos */
+  margin: 0 auto;
+  object-fit: fill;
+  border-radius: 10px;
+}
+@media (max-width: 768px) {
+  .atest-content iframe {
+    display: none;
+  }
 }
 /* Seção publicações */
 .publis {
@@ -384,13 +466,13 @@ b {
 }
 /* section contact */
 .section-contact {
-  background: linear-gradient(90deg, #031532 0%, #2987f2 100%);
+  background: linear-gradient(178deg, #031532 0%, #046191 62%);
   padding-inline: 15%;
   padding-block: 4%;
 }
 .title-contact {
   color: #ffffff;
-  font-size: 26px;
+  font-size: 30px;
   font-weight: 600;
   text-align: center;
   align-items: center;
@@ -398,7 +480,7 @@ b {
 }
 .title-contact p {
   color: #d4d4d4;
-  font-size: 15px;
+  font-size: 20px;
   padding-block: 10px;
 }
 .forms-contact {
@@ -412,6 +494,9 @@ b {
   .forms-contact {
     display: grid;
     grid-template-columns: 1fr;
+  }
+  .title-contact {
+    font-size: 25px;
   }
 }
 
