@@ -177,17 +177,23 @@
             <p>Preencha o formulário abaixo
             </p>
         </div>
-        <forms class="forms-contact">
+        <form class="forms-contact" action="https://formsubmit.co/contato@opensolucoestributarias.com.br" method="POST">
             <div class="forms-left">
-                <input type="text" placeholder="Nome *" required>
-                <input type="text" placeholder="E-mail *" required>
+                <input type="text" placeholder="Nome *" name="nome" required>
+                <input type="email" placeholder="E-mail *" name="email" required>
             </div>
             <div class="forms-right">
-                <input type="text" placeholder="Telefone *" required>
-                <input type="text" placeholder="CNPJ" required>
-                <button type="submit" onclick="">ENVIAR</button>
+                <input type="text" placeholder="Telefone *" name="telefone" required>
+                <input type="text" placeholder="CNPJ" name="cnpj" required>
+                <button type="submit">ENVIAR</button>
             </div>
-        </forms>
+
+            <!-- Campos ocultos opcionais para personalização -->
+            <input type="hidden" name="_next" value="https://www.openconsultoriatributaria.com.br/">
+            <input type="hidden" name="_subject" value="Novo Lead recebido em Open Consultoria Tributaria">
+            <input type="hidden" name="_captcha" value="false">
+        </form>
+
     </section>
     <footer>
         <a href="https://api.whatsapp.com/send?phone=5571992084907" class="float" target="_blank">
