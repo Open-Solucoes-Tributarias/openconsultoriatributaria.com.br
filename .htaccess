@@ -1,0 +1,4 @@
+RewriteEngine On
+
+# Redirecionamento para URL amigável sem extensão
+RewriteRule ^especialistas-em-reducao-e-recuperacao-de-tributos/?$ /page/especialistas-em-reducao-e-recuperacao-de-tributos.html [L]
